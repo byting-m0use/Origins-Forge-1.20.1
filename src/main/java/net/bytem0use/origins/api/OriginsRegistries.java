@@ -56,7 +56,7 @@ public class OriginsRegistries {
 
     }
 
-    public interface IFactory<A> {
-        A create(OriginsRegistries<A> var1);
-    }
+    //public interface IFactory<A> {
+        //A create(OriginsRegistries<A> var1);
+    //}
 }
