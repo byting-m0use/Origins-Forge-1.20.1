@@ -1,4 +1,4 @@
-package net.bytem0use.origins.ability;
+package net.bytem0use.origins.api.effects;
 
 import net.bytem0use.origins.api.interfaces.Modifiers;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;

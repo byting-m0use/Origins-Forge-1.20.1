@@ -1,7 +1,10 @@
 package net.bytem0use.origins.ability;
 
+import net.bytem0use.origins.api.OriginsRegistry;
+import net.bytem0use.origins.api.interfaces.Type;
 import net.bytem0use.origins.enums.AbilityCategory;
 import net.bytem0use.origins.enums.PassiveType;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.entity.ai.attributes.Attribute;
@@ -9,7 +12,11 @@ import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.player.Player;
 
 import java.security.Key;
+import java.util.Collections;
+import java.util.LinkedHashSet;
 import java.util.Map;
+import java.util.Set;
+import java.util.function.Consumer;
 
 public class OriginsAbilities extends MobEffect {
     private String id;
@@ -38,8 +45,8 @@ public class OriginsAbilities extends MobEffect {
         return this;
     }
 
-    public String getId(String id) {
-        return this.id;
+    public static String getId(String id) {
+        return id;
     }
 
     public AbilityCategory getCategory(AbilityCategory pCategory) {

@@ -1,10 +1,9 @@
 package net.bytem0use.origins.ability.trait;
 
-import net.bytem0use.origins.ability.PassiveEffect;
-import net.bytem0use.origins.ability.TraitModifier;
-import net.bytem0use.origins.enums.PassiveType;
-import net.minecraft.world.effect.MobEffectCategory;
+import net.bytem0use.origins.api.effects.TraitModifier;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.ai.attributes.Attribute;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraftforge.event.entity.living.LivingFallEvent;
 import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -12,10 +11,10 @@ import net.minecraftforge.fml.common.Mod;
 import org.jetbrains.annotations.Nullable;
 
 @Mod.EventBusSubscriber
-public class NoFallDamage extends TraitModifier {
+public class NoFallDamage extends Attribute {
 
-    public NoFallDamage(String pName, double pAmount, Operation pOperation) {
-        super(pName, pAmount, pOperation);
+    public NoFallDamage(String pDescriptionId, double pDefaultValue) {
+        super(pDescriptionId, pDefaultValue);
     }
 
     @SubscribeEvent

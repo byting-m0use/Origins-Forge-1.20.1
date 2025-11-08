@@ -1,6 +1,6 @@
 package net.bytem0use.origins.ability.passives;
 
-import net.bytem0use.origins.ability.PassiveEffect;
+import net.bytem0use.origins.api.effects.PassiveEffect;
 import net.bytem0use.origins.enums.PassiveType;
 import net.minecraft.world.effect.MobEffectCategory;
 
