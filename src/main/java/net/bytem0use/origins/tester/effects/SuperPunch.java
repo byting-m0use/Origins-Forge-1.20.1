@@ -1,15 +1,10 @@
 package net.bytem0use.origins.tester.effects;
 
-import net.bytem0use.origins.ability.AssignableAbility;
-import net.bytem0use.origins.api.OriginsRegistries;
-import net.bytem0use.origins.api.conditional.IConditional;
-import net.bytem0use.origins.enums.AbilityCategory;
+import net.bytem0use.origins.abilities.ability.AssignableAbility;
+import net.bytem0use.origins.abilities.api.conditional.IConditional;
+import net.bytem0use.origins.abilities.enums.AbilityCategory;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.player.Player;
-import net.minecraftforge.event.entity.living.*;
-
-import java.util.Map;
 
 public class SuperPunch extends AssignableAbility implements IConditional {
 

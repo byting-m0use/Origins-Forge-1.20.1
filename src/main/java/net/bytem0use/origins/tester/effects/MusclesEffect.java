@@ -1,7 +1,7 @@
 package net.bytem0use.origins.tester.effects;
 
-import net.bytem0use.origins.ability.AssignableAbility;
-import net.bytem0use.origins.api.AbilityRegistry;
+import net.bytem0use.origins.abilities.ability.AssignableAbility;
+import net.bytem0use.origins.abilities.api.AbilityRegistry;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.entity.player.Player;
