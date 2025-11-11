@@ -16,7 +16,4 @@ public class SuperPunch extends AssignableAbility implements IConditional {
     public boolean hasAbility(LivingEntity entity) {
         return super.hasAbility(entity);
     }
-
-    static {
-    }
 }

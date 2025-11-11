@@ -1,7 +1,7 @@
 package net.bytem0use.origins;
 
 import com.mojang.logging.LogUtils;
-import net.bytem0use.origins.abilities.ability.Attributes;
+import net.bytem0use.origins.abilities.ability.ModAttributes;
 import net.bytem0use.origins.abilities.particles.OriginsParticles;
 import net.bytem0use.origins.tester.effects.ModEffects;
 import net.minecraft.network.FriendlyByteBuf;
@@ -48,7 +48,7 @@ public class Origins
         //Init
         OriginsParticles.registerParticles(modEventBus);
         ModEffects.register(modEventBus);
-        Attributes.registerAttributes(modEventBus);
+        ModAttributes.registerAttributes(modEventBus);
 
         //Config
         modEventBus.addListener(this::addCreative);
